@@ -33,7 +33,7 @@ class ActivitiesController < ApplicationController
     end
      
     def activity_params
-        params.require(:activity).permit(:prospect_id, :name , :status, :created_by, :description ) 
+        params.require(:activity).permit(:prospect_id, :name , :status, :created_by, :description, :prospect_name) 
          
     end
 

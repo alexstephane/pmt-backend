@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_11_18_201423) do
     t.string "name"
     t.integer "prospect_id"
     t.string "created_by"
+    t.string "prospect_name"
     t.string "status"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false

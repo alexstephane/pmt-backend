@@ -30,7 +30,7 @@
     andrew = Prospect.create(manager_id:stephane.id,salesrep_id: alex.id, first_name: 'Andrew', last_name: 'Park',phone:"804-219 3042", email: 'andrew@flatiron.com', status: "working", created_by:stephane.id)
 # created activities
 
-    phone = Activity.create(prospect_id: milo.id, name: 'Phone call', status: "working", created_by:alex.id, description: "Left a message, will follow tomorrow")
-    meeting = Activity.create(prospect_id: andrew.id, name: 'Meeting', status: "won", created_by:alex.id, description: "great meeting today, closed the deal")
+    phone = Activity.create(prospect_id: milo.id, prospect_name: milo.first_name, name: 'Phone call', status: "working", created_by:alex.first_name, description: "Left a message, will follow tomorrow")
+    meeting = Activity.create(prospect_id: andrew.id, name: 'Meeting',status: "won", created_by:alex.first_name, description: "great meeting today, closed the deal")
 
 
