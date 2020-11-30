@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       post '/login', to: 'auth#create'
       get '/managers/:username', to: 'managers#show'
       get '/managers/', to: 'managers#index'
+      #patch '/managers', to: 'managers#update'
      end
   end
 end
