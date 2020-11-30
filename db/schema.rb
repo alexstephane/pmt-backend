@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_11_18_201423) do
     t.string "last_name"
     t.string "title"
     t.string "email"
+    t.string "username"
     t.string "password_digest"
     t.string "photo"
     t.datetime "created_at", precision: 6, null: false
@@ -55,6 +56,7 @@ ActiveRecord::Schema.define(version: 2020_11_18_201423) do
     t.string "title"
     t.string "email"
     t.string "password_digest"
+    t.string "username"
     t.string "photo"
     t.integer "manager_id"
     t.datetime "created_at", precision: 6, null: false

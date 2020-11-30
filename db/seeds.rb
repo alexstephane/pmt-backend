@@ -11,8 +11,9 @@
     Prospect.destroy_all
     Activity.destroy_all
 #created Manager
-    stephane = Manager.create(first_name: 'stephane', last_name: 'white', title: 'manager', email: 'jane@flatiron.com', password: "stephane", photo: "https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-e58c54de9ffc-512")
-    john = Manager.create(first_name: 'John', last_name: 'King', title: 'manager', email: 'john@flatiron.com', password: "john", photo: "https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-e58c54de9ffc-512")
+    stephane = Manager.create(first_name: 'stephane', username: "mike",last_name: 'white', title: 'manager', email: 'jane@flatiron.com', password: "stephane", photo: "https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-e58c54de9ffc-512")
+    # king =  Manager.create(first_name: 'stephane', username: "alex",last_name: 'white', title: 'manager', email: 'jane@flatiron.com', password: "stephane", photo: "https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-e58c54de9ffc-512")
+    john = Manager.create(first_name: 'John',  username: "new",last_name: 'King', title: 'manager', email: 'john@flatiron.com', password: "john", photo: "https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-e58c54de9ffc-512")
 
 #created Salesperson
 

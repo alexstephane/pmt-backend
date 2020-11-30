@@ -6,6 +6,7 @@ class CreateSalesreps < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :email
       t.string :password_digest
+      t.string "username"
       t.string :photo
       t.integer :manager_id
 
