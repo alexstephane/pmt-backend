@@ -3,11 +3,14 @@ class  Api::V1::ManagersController < ApplicationController
     def show
         #byebug
          #render json: Manager.find_by(username: params[:username])
-         #token = request.headers["Authentication"].split(" ")[1]
-         #render json: Manager.find(params[:id]), status: :accepted
+        #  token = request.headers["Authentication"].split(" ")[1]
+        #  render json: Manager.find(params[:id]), status: :accepted
          
-         token = request.headers["Authentication"].split(" ")[1]
-         render json: Manager.find(params[:id]), status: :accepted
+         #token = request.headers["Authentication"].split(" ")[1]
+         #token = encode("manager_id":5)
+         render json: Manager.find(request.filtered_parameters["username"]), status: :accepted
+         #byebug
+        
 
 
         #  token = request.headers["Authentication"].split(" ")[1]
