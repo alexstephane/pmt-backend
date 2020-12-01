@@ -1,3 +1,4 @@
+
 class ProspectsController < ApplicationController
     def index
         @prospects = Prospect.all
@@ -15,10 +16,6 @@ class ProspectsController < ApplicationController
         @prospect.update(prospect_params)
         render json: @prospect.to_json()
     end
-
-    
-
-
 
     def create
         @prospect = Prospect.new(prospect_params)

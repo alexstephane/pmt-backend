@@ -1,2 +1,0 @@
-class SalepeopleController < ApplicationController
-end

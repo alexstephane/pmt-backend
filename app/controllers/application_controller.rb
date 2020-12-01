@@ -1,3 +1,4 @@
+
 class ApplicationController < ActionController::API
 
     def secret_key

@@ -1,3 +1,5 @@
+
+
 class SalesrepsController < ApplicationController
 
     def index
@@ -5,13 +7,9 @@ class SalesrepsController < ApplicationController
         render json: Salesrep.all.to_json
     end  
 
-
-
     def show
         render json: Salesrep.find(params[:id]).to_json
     end
-
-
 
     def update
         @salesrep = Salesrep.find(params[:id])
@@ -29,23 +27,22 @@ class SalesrepsController < ApplicationController
     
     end
 
-     
-
-
     def destroy
         
        @salesrep= Salesrep.find(params[:id])
        @salesrep.destroy
     end
 
-   
-
     def salesrep_params
         params.require(:salesrep).permit(:first_name , :last_name , :title, :email, :password, :photo, :manager_id, :password) 
          
-      end
+    end
 
 end
         
         
+
+
+
+
 

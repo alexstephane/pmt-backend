@@ -1,20 +1,20 @@
-class ManagersController < ApplicationController
 
-    # def show
-    #     #byebug
-    #      #render json: Manager.find_by(username: params[:username])
-    #      #token = request.headers["Authentication"].split(" ")[1]
-    #      render json: Manager.find(params[:id]), status: :accepted
-    #     #render json: Manager.find_by(username:params[:username]), status: :accepted
-    #     #byebug
-    # end
-    
-        
-          def index
-            @managers = Manager.all
-            render json: Manager.all.to_json
-         end
-    
+
+class  ManagersController < ApplicationController
+
+    def findbyUsername
+        render json: Manager.find(request.filtered_parameters["username"]), status: :accepted
+    end
+
+    def show
+         render json: Manager.find(params[:id]), status: :accepted
+    end
+
+    def index
+        @managers = Manager.all
+        render json: Manager.all.to_json
+    end
+
     
     
      def create
