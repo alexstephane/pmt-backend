@@ -9,6 +9,7 @@ Activity.destroy_all
 stephane = Manager.create(first_name: 'stephane', username: "stephane",last_name: 'white', title: 'manager', email: 'jane@flatiron.com', password: "stephane", photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgSUQS8umHlBVfP_U7zk8HuhW6gliTFi1acg&usqp=CAU")
 king =  Manager.create(first_name: 'king', username: "king",last_name: 'white', title: 'manager', email: 'jane@flatiron.com', password: "king", photo: "https://ca.slack-edge.com/T02MD9XTF-U015WR36Z7D-e58c54de9ffc-512")
 john = Manager.create(first_name: 'john',  username: "john",last_name: 'King', title: 'manager', email: 'john@flatiron.com', password: "john", photo: "https://alliancebjjmn.com/wp-content/uploads/2019/07/placeholder-profile-sq.jpg")
+mik = Manager.create(first_name: 'john',  username: "john",last_name: 'King', title: 'manager', email: 'john@flatiron.com', password: "john", photo: "https://alliancebjjmn.com/wp-content/uploads/2019/07/placeholder-profile-sq.jpg")
 
 #created Salesperson
 alex = Salesrep.create(manager_id:stephane.id, first_name: 'Alex', last_name: 'Ngundji', title: 'Salesperson', email: 'alex@flatiron.com',username: "alex", password: "alex", photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdf9vUoTUVrrfPkYkX6Scf2FTei8RKX6PAWQ&usqp=CAU")
