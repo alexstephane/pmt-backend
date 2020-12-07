@@ -4,6 +4,7 @@ Manager.destroy_all
 Salesrep.destroy_all
 Prospect.destroy_all
 Activity.destroy_all
+#testing
 
 #created Manager
 stephane = Manager.create(first_name: 'stephane', username: "stephane",last_name: 'white', title: 'manager', email: 'jane@flatiron.com', password: "stephane", photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgSUQS8umHlBVfP_U7zk8HuhW6gliTFi1acg&usqp=CAU")
