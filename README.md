@@ -12,19 +12,17 @@ There are two types of user, a manager and a salesperson.
 
 ## Manager core features
 
-* As a manager I can  create a salesperson 
-* As a manager I  can assign a sales goals to my salespeople
-* As a manager I can see a list of all of my sales reps
-* As a manager I can see all of my sales people’s activities.
-* As a manager i should be able to assign a prospect to a particular sales rep
+* A can create a salesperson 
+* A manager can see a list of all Sales people
+* A manager can see a list of all salespeople’s activities.
 * As a manger I should be able to delete an account from the system 
 
 
 ## salesperson core features
 
-* As a sales person, I can  create a new prospect
-* As A  sales person I  can see  all of the activities that's  associated with the prospects I own
-* As a sales person I can see a list of all of my prospect
+* A sales person can create a new prospect
+* A sales person can see a list of all activities associated with their prospect
+* A sales person can see a list of all prospects
 
 
 # Deployment instructions
